@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;  
+    padding: 0;  
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+@import url("../fonts/Gilroy/stylesheet.css");
+@import url("../fonts/ProximaNova/stylesheet.css");
+
+body {
+    background-color:  #E5E5E5;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main-container {
+    display: grid;
+    justify-items: stretch;
+    align-items: center;
+}
+
+/* TOP */
+
+.top {
+    background-image: url('../img/hero_content/jakob-owens-oIPwvZIAp0o-unsplash.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    width: 100%;
+    height: 768px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(0deg, #74939A, #74939A);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+    height: 80px;
+}
+
+.logo {
+    padding-top: 27px;
+    display: flex;
+    width: 290px;
+    height: 70px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 70px;
+    margin-right: 0;
+}
+
+.logoImage{
+    width: 39.79px;
+    height: 26.11px;
+    padding: 4px 11px;
+    background: url('../img/hero_content/logo/Union.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logoImage img {
+    width: 16.56px;
+    height: 16.67px;
+
+}
+
+.logo a {
+    height: 0;
+}
+
+.logo p {
+    font-family: Gilroy;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    color: rgb(250, 245, 245);
+    height: 0;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.logo-text {
+    width: 240px;
+    height: 70px;
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-left: 80px;
+    margin-left: 0;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+    opacity: 0.7;
+    border-left: 1px solid white;
+    border-radius: 1px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 70px;
+    padding: 0;
+
+}
+
+.links a {
+    margin-left: 30px;
+    font-family: Proxima Nova;
+    font-size: 15px;
+    font-weight: 200;
+    color: #FFFFFF;
+}
+/* end TOP */
+
+.top_text {
+    display: grid;
+    justify-items: center;
+    margin-top: 55px;
+}
+
+.top_text h2 {
+    margin-top: 40px;
+    width: 687px;
+    text-align: center;
+    font-family: Proxima Nova;
+    font-size: 26px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 10px black;
+}
+
+.top_text>h1 {
+    margin-bottom: 40px;
+    padding: 0;
+    text-align: center;
+    font-family: Gilroy;
+    color: #FFFFFF;
+    font-size: 90px;
+    line-height: 100%;
+    width: 512px;
+}
+
+.top_text>h2 a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.top_text>h2 img {
+    width: 30.06px;
+    height: 30px;
+   padding: 0 auto;
+}
+
+.connect-button {
+    width: 337px;
+    height: 70px;
+    padding: 25px;
+    margin-top: 43px;
+    border: none;
+    text-transform: uppercase;
+    font-family: Proxima Nova;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all 1s ease-out;
+}
+
+.connect-button:hover {
+    background-color: rgb(167, 159, 159);
+}
+
+.connect-button:active {
+    transform: scale(0.9);
+    border: none;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.title-prefferences {
+    float: left;
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.location {
+    float: right;
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+
+.prefferences {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    width: 1370px;
+    height: 120px;
+    margin-left: 70px;
+    margin-top: 36.4px;
+    padding: 20px 50px;
+    background: rgba(116, 147, 154, 0.8);
+    overflow: hidden;
+}
+
+.prefferences img {
+    margin-right: 30px;
+}
+
+.weDo {
+    padding-left: 20px;
+    width: 360px;
+    border-right: 1px solid #000;
+}
+
+.ourTime{
+    width: 420px;
+    margin-left: 20px;
+}
+
+.terms {
+    width: 510px;
+    margin-left: 20px;
+}
+
